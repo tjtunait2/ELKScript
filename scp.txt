@@ -2,7 +2,7 @@ scp elk@192.168.0.101:/ca.crt ./
 Import-Certificate -CertStoreLocation Cert:\LocalMachine\Root -FilePath ./ca.crt
 Windows Elastic Agent Download
 
-Start-BitsTransfer -Source https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-7.17.6-windows-x86_64.zip -Destination "C:\Program Files\elastic-agent.zip"|
+Start-BitsTransfer -Source https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-7.17.11-windows-x86_64.zip -Destination "C:\Program Files\elastic-agent.zip"|
 
 Expand-Archive "C:\Program Files\elastic-agent.zip" -DestinationPath "C:\Program Files\elastic-agent"
 
