@@ -7,3 +7,4 @@ Start-BitsTransfer -Source https://artifacts.elastic.co/downloads/beats/elastic-
 Expand-Archive "C:\Program Files\elastic-agent.zip" -DestinationPath "C:\Program Files\elastic-agent"
 
 rm "C:\Program Files\elastic-agent.zip"
+https://www.leveleffect.com/blog/home-lab-ingesting-data-with-agent-and-fleet
