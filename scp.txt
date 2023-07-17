@@ -8,3 +8,5 @@ Expand-Archive "C:\Program Files\elastic-agent.zip" -DestinationPath "C:\Program
 
 rm "C:\Program Files\elastic-agent.zip"
 https://www.leveleffect.com/blog/home-lab-ingesting-data-with-agent-and-fleet
+
+.\elastic-agent.exe install --url=https://192.168.0.101:8220 --enrollment-token=aGdHaFk0a0JZSTFDNUx2bzBBOFg6T293S0hyOFVRMjZtSzA0VGtxMms5dw== --certificate-authorities="C:\Windows\System32\ca.crt"
