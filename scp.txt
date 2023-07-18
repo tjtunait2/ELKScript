@@ -14,3 +14,5 @@ https://www.leveleffect.com/blog/home-lab-ingesting-data-with-agent-and-fleet
 
 .\elastic-agent.exe install --url=https://192.168.0.101:8220 --enrollment-token=TkFGRFpJa0JZSTFDNUx2bzhKYno6YzZDN2dsVFBTVEdWVUR5OElYZkF0QQ== --certificate-authorities="C:\Windows\System32\ca.crt"
 .\elastic-agent.exe install --url=https://192.168.0.101:8220 --enrollment-token=ZGtFVmFJa0IxS05TV1dHWXp3VW06Zkk5UzlaWGZUWHV5U3JnN3JvLXp6Zw== --certificate-authorities="C:\Windows\System32\ca.crt"
+
+.\elastic-agent.exe install --url=https://192.168.0.101:8220 --enrollment-token=MUVFY2FJa0IxS05TV1dHWWlBeFo6NW0tVjlXY0pSNjJOUHpTaVZyOU9XUQ== --certificate-authorities="C:\Windows\System32\ca.crt"
