@@ -1,0 +1,11 @@
+Beats:
+A key characteristic of modern IT environments is that useful data is generated
+everywhere. Appliances sitting on the edge of your network can have important metrics
+to capture; a fleet of frontend, backend, and database servers can generate critical
+error or warning logs, and the application your customer runs can generate in-depth
+instrumentation and tracing related to application performance bottlenecks you care
+about. Data is not only dispersed across the environment but is also varied in terms of the
+nature of the information, how it's structured, and how it should be collected.
+When data is generated, it typically will need to be shipped to a centralized logging
+platform for search, correlation, and analysis. Beats agents are designed to collect and ship
+the data to such a central destination.
