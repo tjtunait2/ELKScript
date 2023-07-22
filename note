@@ -9,3 +9,19 @@ nature of the information, how it's structured, and how it should be collected.
 When data is generated, it typically will need to be shipped to a centralized logging
 platform for search, correlation, and analysis. Beats agents are designed to collect and ship
 the data to such a central destination.
+Kibana data views
+A fundamental aspect of starting to work with a dataset on Kibana is configuring the data
+view for the data. A Kibana data view determines what underlying Elasticsearch indices will
+be addressed in a given query, dashboard, alert, or machine learning job configuration. Data
+views also cache some metadata for underlying Elasticsearch indices, including the field
+names and data types (the schema) in a given group of indices. This cached data is used in
+the Kibana interface when creating and working with visualizations.
+In the case of time series data, data view can configure the name of the field containing the
+timestamp in a given index. This allows Kibana to narrow down your queries, dashboards,
+and so on to the appropriate time range on the underlying indices, allowing for fast and
+efficient results. The universal date and time picker at the top right of the screen allows
+granular control of time ranges. The time picker will not be available if a time field is not
+configured for a data view.
+Data view can also specify how fields should be formatted and rendered on visualizations.
+For example, a source.bytes integer field can be represented by bytes to automatically
+format values in human-readable units such as MB or GB.
