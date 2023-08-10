@@ -25,4 +25,4 @@ Start-BitsTransfer -Source https://artifacts.elastic.co/downloads/beats/elastic-
 
 Expand-Archive "C:\Program Files\elastic-agent.zip" -DestinationPath "C:\Program Files\elastic-agent"
 
-.\elastic-agent.exe install --url=https://172.20.10.12:8220 --enrollment-token=TjR3bjNva0JHT3NWZHZsekhyT0E6ZTF0a21lb19TeFdicGxWUnI4NnNnUQ==
+.\elastic-agent.exe install --url=https://172.20.10.12:8220 --enrollment-token=TjR3bjNva0JHT3NWZHZsekhyT0E6ZTF0a21lb19TeFdicGxWUnI4NnNnUQ== --certificate-authorities="C:\Windows\System32\ca.crt"
