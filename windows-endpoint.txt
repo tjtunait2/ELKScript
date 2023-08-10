@@ -4,3 +4,17 @@ Expand-Archive "C:\Program Files\Sysmon.zip" -DestinationPath "C:\Program Files\
 cd "C:\Program Files\Sysmon"
 Invoke-WebRequest -URI https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml -OutFile "C:\Program Files\Sysmon\sysmonconfig-export.xml"
 ./sysmon.exe -accepteula -i sysmonconfig-export.xml
+
+function Enable-PSScriptBlockLogging
+{
+$basePath = 'HKLM:\Software\Policies\Microsoft\Windows' +
+'\PowerShell\ScriptBlockLogging'
+
+if(-not (Test-Path $basePath))
+{
+$null = New-Item $basePath -Force
+}
+
+Set-ItemProperty $basePath -Name EnableScriptBlockLogging -Value "1"
+
+}
