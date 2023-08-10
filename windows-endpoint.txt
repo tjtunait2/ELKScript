@@ -1,1 +1,1 @@
-
+Test-NetConnection -port 9200 172.20.10.12
