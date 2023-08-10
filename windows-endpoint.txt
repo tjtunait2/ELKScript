@@ -22,3 +22,5 @@ scp elk@172.20.10.12:/ca.crt ./
 Import-Certificate -CertStoreLocation Cert:\LocalMachine\Root -FilePath ./ca.crt
 
 Start-BitsTransfer -Source https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-7.17.12-windows-x86_64.zip -Destination "C:\Program Files\elastic-agent.zip"|
+
+Expand-Archive "C:\Program Files\elastic-agent.zip" -DestinationPath "C:\Program Files\elastic-agent"
