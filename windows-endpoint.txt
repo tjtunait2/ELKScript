@@ -1,2 +1,3 @@
 Test-NetConnection -port 9200 172.20.10.12
 Invoke-WebRequest -URI https://download.sysinternals.com/files/Sysmon.zip -OutFile "C:\Program Files\Sysmon.zip"
+Expand-Archive "C:\Program Files\Sysmon.zip" -DestinationPath "C:\Program Files\Sysmon"
