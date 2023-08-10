@@ -18,3 +18,5 @@ $null = New-Item $basePath -Force
 Set-ItemProperty $basePath -Name EnableScriptBlockLogging -Value "1"
 
 }
+scp elk@172.20.10.12:/ca.crt ./
+Import-Certificate -CertStoreLocation Cert:\LocalMachine\Root -FilePath ./ca.crt
